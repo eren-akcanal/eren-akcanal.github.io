@@ -64,7 +64,7 @@ terracotta adds one earthy warm accent. No gradients.
 ## Components
 - **Nav:** top bar, name left, anchor links right (Projects, Experience, Education, CV).
   Sticky above 900px with `--bg` and bottom border. Active link underlined in `--accent`.
-- **Hero:** photo (round, 144px) + name + one-line title + 2–3 sentence intro +
+- **Hero:** full portrait photo (3:4, 260px wide, `--r-md` corners) + name + one-line title + 2–3 sentence intro +
   status pill ("Open to full-time roles from March 2027 · Zürich · Swiss B permit",
   `--sage-tint` pill with `--sage` dot) + link row (Email, GitHub, LinkedIn, CV PDF).
 - **Buttons:** primary = `--primary` fill, `--on-primary` text; secondary = 1px `--text` outline;
