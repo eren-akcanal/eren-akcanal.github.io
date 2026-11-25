@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eren Akçanal · Perception and 3D vision engineer</title>
+<meta name="description" content="Eren Akçanal, perception and 3D computer vision engineer. EPFL MSc, ETH Zürich thesis on 3D mapping for robotics. Open to full-time roles from March 2027.">
+<meta property="og:title" content="Eren Akçanal · Perception and 3D vision engineer">
+<meta property="og:description" content="Projects in 3D reconstruction, real-time vision systems and tracking. Open to full-time roles in Zürich from March 2027.">
+<meta property="og:image" content="assets/img/eren.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%238A8E75'/%3E%3Ctext x='16' y='21' font-family='Arial' font-weight='700' font-size='14' text-anchor='middle' fill='%23F3EEE4'%3EEA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#projects">Skip to projects</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Eren Akçanal</a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="assets/docs/Eren_Akcanal_CV.pdf">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="name">
+    <div class="wrap">
+      <img class="avatar" src="assets/img/eren.jpg" alt="Portrait of Eren Akçanal" width="152" height="152">
+      <div>
+        <h1 id="name">Eren Akçanal</h1>
+        <p class="title">Perception and 3D computer vision engineer</p>
+        <p class="lead">I build vision systems that run on real hardware: real-time object detection on a 200&nbsp;fps industrial camera line, visual tracking for small avionic devices, and 3D reconstruction from Gaussian splats. I'm finishing an MSc in Communication Systems at EPFL and writing my thesis on 3D scene representation and mapping for robotics at ETH Zürich's Computer Vision and Geometry Lab.</p>
+        <p class="status">Open to full-time roles from March 2027 · Zürich · Swiss B permit</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="assets/docs/Eren_Akcanal_CV.pdf">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            Download CV
+          </a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/erenakcanal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v5"/><path d="M8 8v.01"/><path d="M12 16v-5"/><path d="M16 16v-3a2 2 0 0 0-4 0"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn btn-secondary" href="https://github.com/eren-akcanal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn-quiet" href="mailto:erenakcanall@gmail.com">erenakcanall@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="projects" aria-labelledby="projects-h">
+    <div class="wrap">
+      <h2 id="projects-h">Selected projects</h2>
+      <div class="projects">
+
+        <article class="card featured">
+          <!-- TODO media: assets/media/gsplat-meshes.mp4 (+ poster .jpg) — scene → per-object masks → meshes -->
+          <div class="media placeholder" role="img" aria-label="Placeholder for project video"><span>Video: scene → objects → meshes</span></div>
+          <div class="body">
+            <p class="label">EPFL · CV Lab</p>
+            <h3>Per-object mesh extraction from Gaussian splats</h3>
+            <p class="sum">A prompt-free, training-free pipeline that splits a 3D scene into objects and meshes each one, by fusing SAM and DINOv3 outputs across camera views.</p>
+            <ul class="tags" aria-label="Topics"><li>Gaussian splatting</li><li>Multi-view segmentation</li><li>SAM</li><li>DINOv3</li></ul>
+          </div>
+        </article>
+
+        <article class="card featured">
+          <!-- TODO media: assets/media/copycat.mp4 — leader and follower car driving -->
+          <div class="media placeholder" role="img" aria-label="Placeholder for project video"><span>Video: leader and follower cars</span></div>
+          <div class="body">
+            <h3>Copycat</h3>
+            <p class="sum">Two autonomous cars: a leader following a set path, and a follower that mimics it, keeping a fixed distance and orientation with no communication between them.</p>
+            <ul class="tags" aria-label="Topics"><li>Object detection</li><li>Pose estimation</li><li>Control</li></ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <!-- TODO media: assets/media/road-seg.jpg — aerial image with predicted road mask -->
+          <div class="media placeholder" role="img" aria-label="Placeholder for project image"><span>Image: aerial photo + road mask</span></div>
+          <div class="body">
+            <h3>Road segmentation</h3>
+            <p class="sum">Fully convolutional networks trained to segment roads in aerial images.</p>
+            <ul class="tags" aria-label="Topics"><li>Segmentation</li><li>FCN</li></ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <!-- TODO media: assets/media/film-reversal.jpg — negative vs. converted positive -->
+          <div class="media placeholder" role="img" aria-label="Placeholder for project image"><span>Image: negative → positive</span></div>
+          <div class="body">
+            <h3>Film reversal</h3>
+            <p class="sum">Captured images of film negatives and developed several automatic methods to turn them into positives.</p>
+            <ul class="tags" aria-label="Topics"><li>Image processing</li><li>Computational photography</li><li>ML</li></ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <!-- TODO media: assets/media/rf-sky.jpg — reconstructed radio sky image -->
+          <div class="media placeholder" role="img" aria-label="Placeholder for project image"><span>Image: radio sky map</span></div>
+          <div class="body">
+            <h3>RF sky imaging</h3>
+            <p class="sum">Imaging the sky at radio frequencies from antenna-array data.</p>
+            <ul class="tags" aria-label="Topics"><li>Statistical signal processing</li><li>Imaging</li></ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <!-- TODO media: assets/media/circadian.jpg — segmented cells over time -->
+          <div class="media placeholder" role="img" aria-label="Placeholder for project image"><span>Image: segmented cells</span></div>
+          <div class="body">
+            <h3>Circadian rhythm analysis</h3>
+            <p class="sum">Segmented image sequences of alpha and beta cells (RIP and ProGlucagon markers) and analysed their 24-hour activity through bioluminescence.</p>
+            <ul class="tags" aria-label="Topics"><li>Segmentation</li></ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="experience" aria-labelledby="experience-h">
+    <div class="wrap">
+      <h2 id="experience-h">Experience</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">Sep 2026 – present</span>
+          <span class="logo" aria-hidden="true">ETH</span>
+          <div>
+            <h3>Master's thesis researcher · Computer Vision and Geometry Lab</h3>
+            <p class="where">ETH Zürich · Zürich</p>
+            <p class="desc">Research on 3D scene representation and mapping for robotics, combining reinforcement learning and 3D reconstruction.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">Aug 2025 – Feb 2026</span>
+          <span class="logo" aria-hidden="true">AV</span>
+          <div>
+            <h3>Computer vision and imaging systems engineer intern</h3>
+            <p class="where">AlpVision · Vevey</p>
+            <ul class="desc">
+              <li>Led the development of a high-throughput image acquisition system for an anti-counterfeit application, using real-time object detection on a 200&nbsp;fps camera stream to capture more than 35 products per second.</li>
+              <li>Evaluated and selected industrial cameras and edge-computing platforms against the existing PC-based system.</li>
+              <li>Integrated the system into the production pipeline using image registration, and gave customer demonstrations.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span class="when">Mar 2023 – Jul 2023</span>
+          <span class="logo" aria-hidden="true">AR</span>
+          <div>
+            <h3>Computer vision developer</h3>
+            <p class="where">ARTRON Tasarım · Ankara</p>
+            <ul class="desc">
+              <li>Developed convolution-based object tracking in C++ for small avionic devices.</li>
+              <li>Designed methods to assess in-flight tracking quality.</li>
+              <li>Built optical-flow estimation using INS data to compensate for camera motion during flight.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="education" aria-labelledby="education-h">
+    <div class="wrap">
+      <h2 id="education-h">Education</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">Sep 2024 – Mar 2027</span>
+          <span class="logo" aria-hidden="true">EPFL</span>
+          <div>
+            <h3>MSc in Communication Systems</h3>
+            <p class="where">EPFL · Lausanne</p>
+            <p class="desc">Specialisation in signals, images and interfaces. GPA 5.37 / 6.00. Expected graduation March 2027.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">Sep 2018 – Jun 2024</span>
+          <span class="logo" aria-hidden="true">METU</span>
+          <div>
+            <h3>BSc in Electrical and Electronics Engineering</h3>
+            <p class="where">Middle East Technical University · Ankara</p>
+            <p class="desc">Specialisation in signal processing. GPA 3.85 / 4.00. First 100 Scholarship (KYK): ranked 51st of 2,381,412 in the national university entrance exam.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="skills" aria-labelledby="skills-h">
+    <div class="wrap">
+      <h2 id="skills-h">Skills</h2>
+      <div class="skills">
+        <div><h3>Languages</h3><p>Python, C++, C</p></div>
+        <div><h3>Computer vision and ML</h3><p>PyTorch, OpenCV, TensorRT, CUDA</p></div>
+        <div><h3>Methods</h3><p>Detection, tracking, segmentation, registration, 3D reconstruction</p></div>
+        <div><h3>Tools</h3><p>Docker, Kubernetes, Git, Linux</p></div>
+        <div><h3>Spoken languages</h3><p>Turkish (native), English (C1), French (A2)</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><a href="mailto:erenakcanall@gmail.com">erenakcanall@gmail.com</a> · <a href="https://github.com/eren-akcanal">GitHub</a> · <a href="https://www.linkedin.com/in/erenakcanal">LinkedIn</a></span>
+    <span>Updated November 2026</span>
+  </div>
+</footer>
+
+<script>
+{
+  const links = [...document.querySelectorAll('.nav a[href^="#"]:not(.brand)')];
+  const map = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+  const io = new IntersectionObserver(entries => {
+    for (const e of entries) {
+      if (!e.isIntersecting) continue;
+      links.forEach(a => a.removeAttribute('aria-current'));
+      const a = map.get(e.target.id);
+      if (a) a.setAttribute('aria-current', 'true');
+    }
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  map.forEach((_, id) => { const el = document.getElementById(id); if (el) io.observe(el); });
+}
+</script>
+</body>
+</html>

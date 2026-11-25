@@ -1,0 +1,63 @@
+/* Design tokens — see DESIGN.md. Pages use these names, never raw values. */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+:root {
+  color-scheme: light dark;
+
+  /* Color — light (earthy: beige + sage) */
+  --bg: #F3EEE4;
+  --surface: #E9E2D4;
+  --card: #FBF8F2;
+  --border: #DCD3C2;
+  --rule: #2B2A24;
+  --text: #2B2A24;
+  --text-muted: #6E6A5E;
+  --sage: #8A8E75;
+  --sage-tint: #E3E4D9;
+  --on-sage-tint: #4A4D3B;
+  --primary: #5C604A;
+  --on-primary: #F3EEE4;
+  --accent: #9A5530;
+  --error: #A3361F;
+
+  /* Typography */
+  --font: "Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fs-display: 44px; --lh-display: 1.05;
+  --fs-h2: 28px;      --lh-h2: 1.15;
+  --fs-h3: 20px;      --lh-h3: 1.3;
+  --fs-lead: 19px;    --lh-lead: 1.55;
+  --fs-body: 17px;    --lh-body: 1.6;
+  --fs-small: 15px;   --lh-small: 1.5;
+  --fs-label: 13px;   --lh-label: 1.4;
+  --fw-regular: 400; --fw-bold: 700; --fw-black: 900;
+  --measure: 68ch;
+
+  /* Spacing (8-based) */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px;
+  --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px;
+  --content: 1040px;
+  --gutter: max(20px, 5vw);
+  --section-gap: var(--s-9);
+
+  /* Shape */
+  --r-sm: 4px; --r-md: 8px; --r-pill: 999px;
+  --rule-weight: 3px;
+  --focus: 2px solid var(--accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1C1B17; --surface: #2A2923; --card: #22211C; --border: #3A382F; --rule: #E8E2D5;
+    --text: #E8E2D5; --text-muted: #A39D8F; --sage: #8A8E75; --sage-tint: #2E2F27; --on-sage-tint: #C9CCB5;
+    --primary: #A9AD92; --on-primary: #1C1B17; --accent: #D58B5E; --error: #F08A6B;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1C1B17; --surface: #2A2923; --card: #22211C; --border: #3A382F; --rule: #E8E2D5;
+  --text: #E8E2D5; --text-muted: #A39D8F; --sage: #8A8E75; --sage-tint: #2E2F27; --on-sage-tint: #C9CCB5;
+  --primary: #A9AD92; --on-primary: #1C1B17; --accent: #D58B5E; --error: #F08A6B;
+}
+
+@media (max-width: 600px) {
+  :root { --fs-display: 32px; --fs-h2: 24px; --section-gap: var(--s-8); }
+}
