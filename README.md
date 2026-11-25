@@ -21,6 +21,10 @@ Design rules: `DESIGN.md`. Colours/fonts/spacing: `assets/css/tokens.css`. Layou
 3. Repo → Settings → Pages → Source: "Deploy from a branch", branch `main`, folder `/`.
 4. The site appears at `https://eren-akcanal.github.io` within a minute or two.
 
+## Cache busting
+When you change a CSS file, bump the `?v=` value on its `<link>` in `index.html`
+so browsers load the new version right away.
+
 ## Preview locally
 Open `index.html` in a browser, or run `python3 -m http.server` in this folder and visit
 http://localhost:8000.
