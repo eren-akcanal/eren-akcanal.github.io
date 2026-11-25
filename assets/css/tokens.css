@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 
   /* Color — light (earthy: beige + sage) */
   --bg: #F3EEE4;
@@ -45,18 +45,7 @@
   --focus: 2px solid var(--accent);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #1C1B17; --surface: #2A2923; --card: #22211C; --border: #3A382F; --rule: #E8E2D5;
-    --text: #E8E2D5; --text-muted: #A39D8F; --sage: #8A8E75; --sage-tint: #2E2F27; --on-sage-tint: #C9CCB5;
-    --primary: #A9AD92; --on-primary: #1C1B17; --accent: #D58B5E; --error: #F08A6B;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #1C1B17; --surface: #2A2923; --card: #22211C; --border: #3A382F; --rule: #E8E2D5;
-  --text: #E8E2D5; --text-muted: #A39D8F; --sage: #8A8E75; --sage-tint: #2E2F27; --on-sage-tint: #C9CCB5;
-  --primary: #A9AD92; --on-primary: #1C1B17; --accent: #D58B5E; --error: #F08A6B;
-}
+/* Light mode only (Eren, 2026-11-25). Dark values kept in DESIGN.md for later. */
 
 @media (max-width: 600px) {
   :root { --fs-display: 32px; --fs-h2: 24px; --section-gap: var(--s-8); }

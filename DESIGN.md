@@ -11,6 +11,7 @@ connected, so this direction is based on that reference and the CV, not on a
 survey of comparable sites.
 
 ## Color
+**Site is light mode only** (decided 2026-11-25); the Dark column is kept for reference.
 Earthy palette chosen by Eren (2026-11-25): warm beige ground + sage `#8A8E75`.
 All colors are CSS variables in `assets/css/tokens.css`. Pages never use raw values.
 
@@ -67,6 +68,7 @@ terracotta adds one earthy warm accent. No gradients.
 - **Hero:** full portrait photo (3:4, 260px wide, `--r-md` corners) + name + one-line title + 2–3 sentence intro +
   status pill ("Open to full-time roles from March 2027 · Zürich · Swiss B permit",
   `--sage-tint` pill with `--sage` dot) + link row (Email, GitHub, LinkedIn, CV PDF).
+- **CV button** label is just "CV".
 - **Buttons:** primary = `--primary` fill, `--on-primary` text; secondary = 1px `--text` outline;
   quiet = text link with arrow. Hover: accent underline / darken; focus: 2px `--accent`
   outline, 2px offset; disabled: 40% opacity. Min height 44px.

@@ -13,7 +13,7 @@ Design rules: `DESIGN.md`. Colours/fonts/spacing: `assets/css/tokens.css`. Layou
 - [ ] **LinkedIn URL** — check `https://www.linkedin.com/in/erenakcanal` is correct.
 - [ ] **Logos** — timeline uses text badges (ETH, AV, AR, EPFL, METU). Optionally swap for small
       monochrome logos.
-- [ ] **CV PDF** — `assets/docs/Eren_Akcanal_CV.pdf` is the default LaTeX build; replace when the CV changes.
+- [ ] **CV PDF** — `assets/docs/Eren_Akcanal_CV.pdf` is the web build without phone number (`CV's/latex/Eren_Akcanal_CV_web.pdf`, `\\hidephonetrue`); replace when the CV changes.
 
 ## Publish on GitHub Pages
 1. Create a public repo named `eren-akcanal.github.io`.
